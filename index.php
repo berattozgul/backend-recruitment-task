@@ -1,18 +1,13 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Backend/Full-stack recruitment task</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>User Management</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
-
 <body>
-
-<main>
-    <?php require_once './partials/main.php'; ?>
-</main>
-
-<script src="assets/js/script.js"></script>
+    <?php include 'partials/main.php'; ?>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
