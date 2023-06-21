@@ -1,86 +1,53 @@
-# Backend/Full-stack recruitment task
+# User Management Application
 
-----
+This is a simple User Management application that allows you to add and remove users. The application is built using PHP and utilizes Bootstrap for styling and interactivity.
 
+## Features
 
-Hello there! we can't wait to see to you on board 🚀
+- Add a new user by filling in the required fields.
+- Remove a user from the user list.
+- Display user details, including name, username, email, address, phone, and company information.
+- Expand/collapse company details using a toggle button.
 
-We will kindly ask you to take a look at this super simple recruitment task that will give us a lot of information about your skills with little effort on side. 
+## Prerequisites
 
+To run this application, you need the following:
 
-### 📋   Requirements
+- PHP installed on your server or local machine.
+- A web server (e.g., Apache) to serve the PHP files.
+- Access to a web browser.
 
-- PHP server (>= 8.0) 
-  Really, that's all you need 🙂
+## Installation
 
+To install and run the User Management application:
 
-### ⚙️File structure
+1. Clone the repository or download the source code files to your local machine.
 
-```
-│   index.php
-├───assets
-│   ├───css
-│   │       styles.css
-│   └───js
-│           script.js
-├───dataset
-│       users.json
-└───partials
-        main.php
-```
+2. Place the files in the web server's document root directory.
 
-- Your entry file for PHP is `main.php` - feel free to organize other PHP files just the way you like it
-- Your datasource is `users.json` file - all changes (see points 2 and 3) have to be saved
-- For scripts and styles, use the `styles.scss` and `script.js` files - those are not necessary, but we will highly appreciate it 
+3. Make sure PHP is properly configured and enabled on your server.
 
+4. Ensure that the web server is running.
 
+5. Open a web browser and navigate to the application's URL.
 
-### 💻   Your task 
+## Usage
 
-The recruitment task consists of 3 steps
+1. Upon accessing the application, you will see a form to add a new user. Fill in the required fields such as name, username, email, address, phone, and company information.
 
-1️⃣ Create a simple table which lists the users from `users.json` file
+2. Click the "Add User" button to submit the form and add the new user to the user list.
 
-| Name             | Username  | Email              | Address                                     | Phone                 | Company            |
-| ---------------- | --------- | ------------------ | ------------------------------------------- | --------------------- | ------------------ |
-| Leanne Graham    | Bret      | Sincere@april.biz  | Kulas Light, 92998-3874 Gwenborough         | 1-770-736-8031 x56442 | Romaguera-Crona    |
-| Ervin Howell     | Antonette | Shanna@melissa.ts  | Victor Plains, 90566-7771 Wisokyburgh       | 010-692-6593 x09125   | Deckow-Crist       |
-| Clementine Bauch | Samantha  | Nathan@yesenia.ner | Douglas Extension, 59590-4157 McKenziehaven | 1-463-123-4447        | Romaguera-Jacobson |
+3. The user list will be displayed below the form, showing the details of each user.
 
-2️⃣ Add a "Remove" button for each row, once clicked - the selected user should be removed from the JSON file, the page should be reloaded after the button is clicked. 
+4. To expand or collapse the company details for a user, click the corresponding "Company Name" button.
 
-| Name             | Username  | Email              | Address                                     | Phone                 | Company            |                   |
-| ---------------- | --------- | ------------------ | ------------------------------------------- | --------------------- | ------------------ | ----------------- |
-| Leanne Graham    | Bret      | Sincere@april.biz  | Kulas Light, 92998-3874 Gwenborough         | 1-770-736-8031 x56442 | Romaguera-Crona    | **REMOVE BUTTON** |
-| Ervin Howell     | Antonette | Shanna@melissa.ts  | Victor Plains, 90566-7771 Wisokyburgh       | 010-692-6593 x09125   | Deckow-Crist       | **REMOVE BUTTON** |
-| Clementine Bauch | Samantha  | Nathan@yesenia.ner | Douglas Extension, 59590-4157 McKenziehaven | 1-463-123-4447        | Romaguera-Jacobson | **REMOVE BUTTON** |
+5. To remove a user from the list, click the "Remove" button next to the user. A confirmation dialog will appear, asking for confirmation before removing the user.
 
-3️⃣ Add a simple form for adding a new user to the JSON file. 
+6. The user list will be automatically updated, and the page will refresh to reflect the changes.
 
-| Name             | Username  | Email              | Address                                     | Phone                 | Company            |                   |
-| ---------------- | --------- | ------------------ | ------------------------------------------- | --------------------- | ------------------ | ----------------- |
-| Leanne Graham    | Bret      | Sincere@april.biz  | Kulas Light, 92998-3874 Gwenborough         | 1-770-736-8031 x56442 | Romaguera-Crona    | **REMOVE BUTTON** |
-| Ervin Howell     | Antonette | Shanna@melissa.ts  | Victor Plains, 90566-7771 Wisokyburgh       | 010-692-6593 x09125   | Deckow-Crist       | **REMOVE BUTTON** |
-| Clementine Bauch | Samantha  | Nathan@yesenia.ner | Douglas Extension, 59590-4157 McKenziehaven | 1-463-123-4447        | Romaguera-Jacobson | **REMOVE BUTTON** |
+## Technology Stack
 
-**Name input** | **Username input** | **Email input** | **Address input** | **Phone Input**	| **Company Input** | **SUBMIT BUTTON**
+The User Management application uses the following technologies:
 
----
-
-
-
-
-
-
-⚠️You have a free reign in terms of the architecture - creating controllers and models will be a huge plus
-
-⚠️We don't insist on fancy styling for the table, but anything else than the raw layout will be appreciated
-
-⚠️We will check aspects like code readability, scalability and error handling
-
-⏳ Don't hurry up! Take as much time as you need
-
-
-⚠️The easiest way to start is to fork this repository, but feel free to use any other method
-
-Good luck ! 🔥
+- **PHP**: A server-side scripting language used for handling form submissions, data processing, and file operations.
+- **Bootstrap**: A popular front-end framework that provides CSS and JavaScript components for creating responsive and visually appealing web pages.
